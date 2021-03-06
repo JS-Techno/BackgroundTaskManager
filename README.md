@@ -1,33 +1,31 @@
-# Background Task Manager API for android
+# Background Task Manager API for android :snowflake:
 
-<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 ![Github versions](https://img.shields.io/github/v/release/jerrysjoseph/BackgroundTaskManager?include_prereleases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jerrysjoseph/BackgroundTaskManager)
 ![GitHub contributors](https://img.shields.io/github/contributors/jerrysjoseph/BackgroundTaskManager)
 ![GitHub stars](https://img.shields.io/github/stars/jerrysjoseph/BackgroundTaskManager?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/jerrysjoseph/BackgroundTaskManager?style=social)
 
-BackgroundTaskManager API provides the ability to chain multiple tasks into a singleton instance of backgroundTaskManager.It also includes the ability to process tasks SERIALLY ( tasks processed one after another) or in PARALLEL ( multiple tasks processed simultaneously).
-This library handles thread processing as required and is optimised to handle tasks efficiently. Maximum PARALLEL tasks that can be executed simultaneously is computed and processed accordingly. 
-If the TaskQueue exceeds the maximum available cores of a CPU, the all subsequent tasks are queued for execution. 
-This also includes extended features invoking a callable function before or after completion of the tasks. This feature is wrapped in a familiar and easy method called before() and then().
-
-
+BackgroundTaskManager API provides the ability to chain multiple tasks into a singleton instance of backgroundTaskManager.It also includes the ability to process tasks SERIALLY ( tasks processed one after another) or in PARALLEL ( multiple tasks processed simultaneously). This library handles thread processing as required and is optimised to handle tasks efficiently. Maximum PARALLEL tasks that can be executed simultaneously is computed and processed accordingly. If the TaskQueue exceeds the maximum available cores of a CPU, the all subsequent tasks are queued for execution. This also includes extended features invoking a callable function before or after completion of the tasks. This feature is wrapped in a familiar and easy method called before() and then().
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of Android Studio and gradle.
-* uuhhmmmm...  nothing else.....
+* uuhhmmmm...  nothing else..... :relaxed:
 
 ## Demo
 
 ### Parallel Processing
 
+Maximum the tasks in the queue are processed simultaneously reducing the runtime.
+
 ![animation](gifs/backgroundTaskManager2.gif)
 
 ### Serial Processing
+
+Only one task is processed at a time, the order in which tasks are passed is maintained
 
 ![animation](gifs/backgroundTaskManager3.gif)
 
@@ -242,20 +240,20 @@ This library also provides methods to implement pause,resume and stop the entire
      BackgroundTaskManager.stopExecution();
 ```
  
-## Goals
-- [x] Adding multiple _Runnable_ by chaining and execution in a single line.
-- [x] Implement Serial and Parallel processing.
-- [x] Adding multiple tasks which return any result.
-- [x] Cancelling individual Tasks
-- [x] Pausing and resuming execution
-- [x] Handle errors and exception for individual tasks
-- [x] Callbacks for Execution events like onExecutionBegin, onExecutionComplete, onExecutionCancell 
-- [x] adding then() and before() which is invoked after and before execution.
+## Goals :fire:
+- [x] Adding multiple _Runnable_ by chaining and execution in a single line. :heavy_check_mark:
+- [x] Implement Serial and Parallel processing.:heavy_check_mark:
+- [x] Adding multiple tasks which return any result.:heavy_check_mark:
+- [x] Cancelling individual Tasks.:heavy_check_mark:
+- [x] Pausing and resuming execution.:heavy_check_mark:
+- [x] Handle errors and exception for individual tasks.:heavy_check_mark:
+- [x] Callbacks for Execution events like onExecutionBegin, onExecutionComplete, onExecutionCancell. :heavy_check_mark:
+- [x] adding then() and before() which is invoked after and before execution.:heavy_check_mark:
 - [ ] Implementing seperate optimised background tasks for processes like Networking, I/O operations.
 - [ ] Introducing ability to set any task as daemon.
 
 
-## Contributing to this project
+## Contributing to this project :sun_with_face:
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
 To contribute to this project, follow these steps:
 
@@ -267,7 +265,7 @@ To contribute to this project, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
+## Contributors :boy:
 
 Thanks to the following people who have contributed to this project:
 
@@ -275,7 +273,7 @@ Thanks to the following people who have contributed to this project:
 
 You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
 
-## Contact
+## Contact :mailbox:
 
 If you want to contact me you can reach me at <jerin.sebastian153@gmail.com>.
 
